@@ -41,6 +41,17 @@ namespace NguyenTuanViet.ViewModel
                 items.Remove(s);
             }
         }
+        [RelayCommand]
+        async Task Tap(string s)
+        {
+            if (items.Contains(s))
+            {
+
+                await Shell.Current.GoToAsync($"{nameof(DetailPage)}?id={s}");
+
+
+            }
+        }
     
     }
 }

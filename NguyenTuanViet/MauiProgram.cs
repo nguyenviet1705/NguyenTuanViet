@@ -17,6 +17,9 @@ namespace NguyenTuanViet
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<ViewModel.MainViewModel>();
 
+            builder.Services.AddTransient<DetailPage>();
+            builder.Services.AddTransient<ViewModel.DetailViewModel>();
+
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
