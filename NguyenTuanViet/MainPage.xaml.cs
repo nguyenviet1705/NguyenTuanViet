@@ -4,9 +4,10 @@
     {
        
 
-        public MainPage()
+        public MainPage(ViewModel.MainViewModel vm)
         {
             InitializeComponent();
+            BindingContext =    vm;
         }
 
        
